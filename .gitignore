@@ -1,0 +1,45 @@
+# Python and tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Outputs and local learner state
+dist/
+build/
+outputs/
+learning/
+.superlearn/
+cards.tsv
+*.log
+*.tmp
+
+# Credentials and local agent configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.codex/
+.claude/
+*.local.*
+# Keep only the portable marketplace under .agents.
+.agents/*
+!.agents/plugins/
+.agents/plugins/*
+!.agents/plugins/marketplace.json
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

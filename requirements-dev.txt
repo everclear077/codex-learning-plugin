@@ -1,0 +1,2 @@
+# Development validation only; exporter runtime uses the standard library.
+PyYAML==6.0.3

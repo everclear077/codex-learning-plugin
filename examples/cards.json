@@ -1,0 +1,14 @@
+{
+  "cards": [
+    {
+      "id": "probability-conditional-01",
+      "front": "条件概率 P(A|B) 的分母是什么？需要什么条件？",
+      "back": "分母是 P(B)，要求 P(B)>0；P(A|B)=P(A∩B)/P(B)。",
+      "source": "Synthetic example; elementary conditional probability definition.",
+      "tags": [
+        "probability",
+        "core"
+      ]
+    }
+  ]
+}
