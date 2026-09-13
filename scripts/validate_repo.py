@@ -44,6 +44,7 @@ def validate():
     require(not any(key in manifest for key in ('hooks', 'apps', 'mcpServers')), 'Unexpected runtime capability')
     skills = internal(PLUGIN, manifest['skills'], PLUGIN)
     interface = manifest['interface']
+    require(internal(PLUGIN, interface['composerIcon'], PLUGIN).is_file(), 'Missing plugin icon')
     require(interface['displayName'] == '学习', 'Unexpected display name')
     require(interface['capabilities'] == [], 'Unexpected capability claims')
     require(1 <= len(interface['defaultPrompt']) <= 3, 'Need 1–3 prompts')

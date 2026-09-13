@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Add a portable book-and-checkmark icon for community marketplace listings.
+- Gate contributions with the SHA-pinned HOL Plugin Scanner at score 80 and high-severity thresholds.
+- Validate and include the plugin icon in deterministic release packages.
+
 ## 1.0.0 — 2026-09-13
 
 - Initial public distribution of the 学习 / Core Learning Codex plugin.

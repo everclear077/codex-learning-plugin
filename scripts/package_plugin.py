@@ -20,7 +20,7 @@ def package(output_dir=None):
         if not file.is_file() or '__pycache__' in file.parts or file.suffix == '.pyc':
             continue
         relative = file.relative_to(PLUGIN).as_posix()
-        if file.is_symlink() or (file.suffix not in {'.md', '.py', '.json', '.yaml'} and relative != 'LICENSE'):
+        if file.is_symlink() or (file.suffix not in {'.md', '.py', '.json', '.yaml'} and relative not in {'LICENSE', 'assets/icon.svg'}):
             raise ValueError(f'Unexpected package file: {relative}')
         data = file.read_bytes()
         problems = findings(relative, data)

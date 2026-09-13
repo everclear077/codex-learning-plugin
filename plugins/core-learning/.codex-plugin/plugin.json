@@ -19,6 +19,7 @@
       "继续上次学习，先闭卷测验，再根据我的实际错误决定今天练什么。"
     ],
     "brandColor": "#147D73",
+    "composerIcon": "./assets/icon.svg",
     "websiteURL": "https://github.com/everclear077/codex-learning-plugin",
     "privacyPolicyURL": "https://github.com/everclear077/codex-learning-plugin/blob/main/PRIVACY.md"
   },

@@ -40,6 +40,7 @@ class PublicDistributionTests(unittest.TestCase):
                 names = archive.namelist()
                 self.assertIn('.codex-plugin/plugin.json', names)
                 self.assertIn('LICENSE', names)
+                self.assertIn('assets/icon.svg', names)
                 self.assertFalse(any(n.startswith(('.git/', 'tests/', 'scripts/')) for n in names))
                 self.assertIsNone(archive.testzip())
 
